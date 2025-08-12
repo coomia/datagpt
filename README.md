@@ -1,6 +1,6 @@
 # CoomiaAI - Self-Hosted AI Data Analytics Platform
 
-![CoomiaAI Logo](https://coomia.com/assets/logo-coomia.png)
+![CoomiaAI Logo](https://coomia.com/assets/favicon_48x48.png)
 
 ## Overview
 
