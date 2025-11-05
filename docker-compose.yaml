@@ -39,6 +39,31 @@ services:
     networks:
       - datagpt-network
 
+  postgres:
+    image: agnohq/pgvector:16
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - '${DB_PORT}:5432'
+    networks:
+      - datagpt-network
+    volumes:
+      - ./postgres/pagila-schema.sql:/docker-entrypoint-initdb.d/1-pagila-schema.sql
+      - ./postgres/pagila-schema-jsonb.sql:/docker-entrypoint-initdb.d/1-pagila-schema-jsonb.sql
+      - ./postgres/pagila-data.sql:/docker-entrypoint-initdb.d/2-pagila-data.sql
+      - ./postgres/restore-pagila-data-jsonb.sh:/docker-entrypoint-initdb.d/3-restore-pagila-data-jsonb.sh
+      - ./postgres/pagila-data-yum-jsonb.backup:/docker-entrypoint-initdb.d/pagila-data-yum-jsonb.backup
+      - ./postgres/pagila-data-apt-jsonb.backup:/docker-entrypoint-initdb.d/pagila-data-apt-jsonb.backup
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
   redis:
     image: redis:7.0
     volumes:
