@@ -67,7 +67,7 @@ services:
   ui:
     image: coomia/datagpt-ui:latest
     environment:
-        AGENT_URL: "http://api:8000"
+        AGENT_URL: "http://api:${API_PORT}"
     container_name: ui
     ports:
       - "3000:3000"
