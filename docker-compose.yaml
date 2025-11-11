@@ -1,25 +1,5 @@
 version: '3.8'
 services:
-  trino:
-    image: trinodb/trino:latest
-    container_name: trino
-    ports:
-      - "${TRINO_PORT}:8080"
-    volumes:
-      - ./trino/config:/etc/trino
-      - ./trino/catalog:/etc/trino/catalog
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/-/health"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-      start_period: 30s
-    environment:
-      - JAVA_OPTS=-Xmx2g
-    networks:
-      - datagpt-network
-
-
   ollama-service:
     build:
       context: ./ollama-service
@@ -64,17 +44,9 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
-  redis:
-    image: redis:7.0
-    volumes:
-      - redis_data:/data
-    ports:
-      - '${REDIS_PORT}:6379'
-    restart: always
-    networks:
-      - datagpt-network
+
   api:
-    image: coomia/datagpt-api:1.0
+    image: coomia/datagpt-api:1.2
     container_name: api
     restart: unless-stopped
     ports:
@@ -87,17 +59,15 @@ services:
       - datagpt-network
     depends_on:
       - postgres
-      - redis
       - ollama-service
-      - trino
     extra_hosts:
       - "host.docker.internal:host-gateway"
 
 
   ui:
-    image: coomia/datagpt-ui:latest
+    image: coomia/datagpt-ui:1.2
     environment:
-        AGENT_URL: "http://api:8000/agui"
+        AGENT_URL: "http://api:8000"
     container_name: ui
     ports:
       - "3000:3000"
@@ -108,6 +78,5 @@ networks:
   datagpt-network:
 
 volumes:
-  redis_data:
   ollama-data:
   postgres-data:
