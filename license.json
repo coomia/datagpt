@@ -1,8 +1,11 @@
 {
-  "license_id": "ee2229d967bc347c",
-  "user": "373416233",
-  "expiry": "2025-11-11",
+  "license_id": "bfba0de3c6e50174",
+  "user": "spancer",
+  "email": "spancer@example.com",
   "product": "CoomiaAI",
   "type": "TRIAL",
-  "signature": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJsaWNlbnNlX2lkIjoiZWUyMjI5ZDk2N2JjMzQ3YyIsInVzZXIiOiIzNzM0MTYyMzMiLCJlbWFpbCI6IjM3MzQxNjIzM0BxcS5jb20iLCJwcm9kdWN0IjoiQ29vbWlhQUkiLCJ0eXBlIjoiVFJJQUwiLCJleHBpcnkiOiIyMDI1LTExLTExIn0.nFwrNVCcFGex1xJTVJ46rRYt0lunmuV62hs5Y2aDlW8ALMlGzjNC1s7td8fBSET9amLf7alRJKGFRn4UXAXcdZh3T8Zs1BeMAKenLyNJkyXUa8nDd1zIQDONM8MVcT9VtVxouad2w5veLkMF6UGfFHZxW6Qlhr1GUbGExIUO0dwAVItQNT7py8WZytueX2586jZCLpaPq2iAwRFu69d-TNpZb5C4n3DMZPwZuxK9qwGbYWDuS7LI2LC_RD1dkQBYK-hiJ0se3iFqn9bvF3GsU1KnXj1RMx703cHfR4v52qwcFkh3IfkarJB9JAVBeVHM2GF-wTvhz4OjLgLo6kbzUw"
+  "expiry": "2025-11-18",
+  "signature": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJsaWNlbnNlX2lkIjoiYmZiYTBkZTNjNmU1MDE3NCIsInVzZXIiOiJzcGFuY2VyIiwiZW1haWwiOiJzcGFuY2VyQGV4YW1wbGUuY29tIiwicHJvZHVjdCI6IkNvb21pYUFJIiwidHlwZSI6IlRSSUFMIiwiZXhwaXJ5IjoiMjAyNS0xMS0xOCJ9.TjPTaw_5hygYP6waQQDWzkVRLpVPu1lo-3CYCdqh2y8XxF3jeVvGBdRJhAM8164FeREdYGYKrLtNjLfNrJ6JLZECwbBxIxGSVMcuQMfFzOhRBnnc6RkDiCKBBDgKR2cTk-El2KjinbbXtdfEoZQi1P_IzSMhnetN3v3uRu4RaKU7C4hyQv7Um3ZS_Y1d-HLj7CISHEEaZ2DYvo8mquLxObYSyxIIZ0orhtTBAeiY9mM-gXYKKfjOw0MB-scZX3SUUK6RQpb6LWin-QVOJ47NSkqvymNoqovnkgYcvENwgO5OOmko1EktrbQe77yaeMuUm19TgQSmqTqdEcuNJ4xYVg",
+  "created_at": 1762846480,
+  "updated_at": 1762846480
 }

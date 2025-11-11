@@ -46,7 +46,7 @@ services:
       retries: 5
 
   api:
-    image: coomia/datagpt-api:1.2
+    image: coomia/datagpt-api:latest
     container_name: api
     restart: unless-stopped
     ports:
@@ -54,7 +54,7 @@ services:
     volumes:
       - ./license.json:/app/license.json:ro
       - ./.env:/app/.env:ro
-    command: ["python", "-OO", "-m", "agui.main"]
+    command: ["python", "-OO", "-m", "agui.main:app"]
     networks:
       - datagpt-network
     depends_on:
@@ -65,7 +65,7 @@ services:
 
 
   ui:
-    image: coomia/datagpt-ui:1.2
+    image: coomia/datagpt-ui:latest
     environment:
         AGENT_URL: "http://api:8000"
     container_name: ui
