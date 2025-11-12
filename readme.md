@@ -1,104 +1,187 @@
 # DataGPT
 
-[![Website](https://img.shields.io/badge/website-coomia.com-blue)](https://coomia.com/)  
-[![GitHub](https://img.shields.io/badge/github-coomia--ai%2Fdatagpt-black)](https://github.com/coomia-ai/datagpt)
+[![Website](https://img.shields.io/badge/Website-coomia.com-blue)](https://coomia.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-coomia--ai%2Fdatagpt-black)](https://github.com/coomia-ai/datagpt)
 
-DataGPT (by Coomia) is a **self-hosted AI data analytics platform** that automatically generates charts, KPIs, and dashboards from your datasets — all without manual analysis or SQL queries. Deploy it in minutes on your own infrastructure and get instant insights while keeping full control over your data.
-
----
-
-## 🚀 Key Features
-
-- **Auto Chart Generation**  
-  Detects data structures and automatically generates the most suitable charts.
-
-- **Smart Metrics Extraction**  
-  Identifies and visualizes key performance indicators (KPIs) in real time.
-
-- **Multi-Source Data Integration**  
-  Connect to MySQL, PostgreSQL, Snowflake, data lakes, and more.
-
-- **High Performance & Scalability**  
-  Optimized for datasets ranging from thousands to billions of rows.
-
-- **Fast & Easy Deployment**  
-  Docker-based deployment for quick setup on your infrastructure.
-
-- **Data Privacy & Security**  
-  Fully self-hosted, compliant with your company’s privacy policies.
+🌍 [English](#english-version) | 🇨🇳 [中文](#中文介绍)
 
 ---
 
-## 🛠 How DataGPT Helps You
+## English Version
 
-- **Accelerate Decision-Making**: Transform raw data into interactive charts and metrics instantly.  
-- **Empower Every Team**: Anyone can explore data without SQL or BI tools.  
-- **AI That Understands Context**: AI analyzes trends like an expert analyst to provide meaningful insights.  
+### 🚀 Overview
+
+**DataGPT** by **Coomia** is a **self-hosted AI data analytics platform** that automatically generates charts, KPIs, and dashboards from your datasets — without writing SQL or doing manual analysis.
+
+You can deploy it in minutes, keep full control of your data, and let AI turn it into real-time insights.
 
 ---
 
-## 💰 Pricing
+### ✨ Key Features
 
-DataGPT is available under one-time or annual self-hosted licenses:
+- **Auto Chart Generation** — AI detects patterns and visualizes data automatically.  
+- **Smart KPI Extraction** — Instantly identifies your most important business metrics.  
+- **Multi-Data-Source Support** — Works with MySQL, PostgreSQL, Snowflake, data lakes, and more.  
+- **High Performance** — Handles millions of records smoothly with caching and parallel optimization.  
+- **One-Click Deployment** — Docker-based quick setup in a few minutes.  
+- **Data Privacy First** — 100% self-hosted, compliant, and private by design.
 
-| Plan           | Price       | Features                                                 |
+---
+
+### 🧠 What DataGPT Can Do
+
+- **Accelerate Decision-Making** — Turn raw data into interactive insights instantly.  
+- **Empower the Whole Team** — Anyone can explore and understand data — no SQL required.  
+- **AI with Context Awareness** — Understands your business and generates meaningful insights.
+
+---
+
+### 💰 Licensing & Pricing
+
+| Edition        | Price       | Includes                                                 |
 | -------------- | ----------- | -------------------------------------------------------- |
-| **Starter**    | $499 / Year | Basic AI analytics, 1 data source, community support     |
-| **Pro**        | $999 / Year | Advanced analytics, 6+ data sources, priority support    |
-| **Enterprise** | Custom      | All Pro features, custom integrations, dedicated support |
+| **Starter**    | $499 / year | Core AI analytics, single data source, community support |
+| **Pro**        | $999 / year | Advanced analytics, multi-data-source, priority support  |
+| **Enterprise** | Custom      | All features, integrations, dedicated support            |
 
-> Starter plan includes a **7-day free trial** with no credit card required.
+> 7-day free trial available — no credit card required.
 
 ---
 
-## ⚡ Quick Start
+### ⚡ Quick Start
 
-### Requirements
+#### Requirements
 
 - Docker 20+  
 - Docker Compose 1.29+  
-- Access to your data sources (MySQL, PostgreSQL, Snowflake, etc.)
+- A supported data source (MySQL, PostgreSQL, Snowflake, etc.)
 
-### Installation
+#### Installation
 
 ```bash
-# Clone the repository
 git clone https://github.com/coomia-ai/datagpt.git
 cd datagpt
-
-# Start DataGPT using Docker
 docker-compose up -d
-
 ```
 
-### Access
-
-Open your browser and navigate to:
+Then open your browser:
 
 ```
 http://localhost:8000
 ```
 
-> You will receive a temporary trial key via email for 7 days.
-
-## 📄 Documentation
-
-- User Guide [https://coomia.com/docs.html]
-- Support [https://coomia.com/support.html]
+> You’ll receive a 7-day trial key by email.
 
 ------
 
-## 📞 Contact
+### 📄 Docs & Support
 
-For questions or enterprise inquiries:
+- Docs: https://coomia.com/docs.html
+- Support: https://coomia.com/support.html
+
+------
+
+### 📞 Contact
 
 - Email: support@coomia.com
 - Website: https://coomia.com
 
 ------
 
-## 🔒 About
+### 🔒 About Coomia & DataGPT
 
-DataGPT is built for **privacy, performance, and ease of use**. Perfect for startups, SMEs, or large enterprises that need **secure, fast, self-hosted AI data analytics**.
+Coomia builds secure, high-performance, and user-friendly AI data tools.
+ **DataGPT** empowers individuals and teams to explore, visualize, and understand their data — privately and instantly.
 
-> "Empowering your data with secure AI solutions." — Coomia
+> “Empower your data. Empower your decisions.” — *Coomia*
+
+------
+
+## 中文介绍
+
+### 🚀 概述
+
+**DataGPT（由 Coomia 开发）** 是一款 **自托管 AI 数据分析平台**，能自动从数据集中生成图表、指标和仪表盘，无需编写 SQL 或手动分析。
+
+只需几分钟部署，即可在私有环境中获得实时数据洞察，并完全掌控数据安全。
+
+------
+
+### ✨ 核心功能
+
+- **自动图表生成**：智能识别数据结构，自动生成合适的可视化图表。
+- **智能指标提取（KPI）**：自动分析并提取关键业务指标。
+- **多数据源接入**：支持 MySQL、PostgreSQL、Snowflake、数据湖仓等。
+- **高性能与可扩展性**：从百万到亿级数据集都能流畅运行。
+- **一键部署**：基于 Docker，几分钟即可启动使用。
+- **数据隐私与安全**：完全自托管，数据不出私有环境，满足企业级安全合规。
+
+------
+
+### 🧠 能为你做什么
+
+- **加速决策**：快速将原始数据转化为交互式图表与指标。
+- **赋能全员**：无需懂 SQL，任何人都能探索数据、发现洞察。
+- **上下文理解型分析**：AI 像数据分析师一样理解业务趋势与语境。
+
+------
+
+### 💰 授权与定价
+
+| 授权版本              | 价格      | 功能                             |
+| --------------------- | --------- | -------------------------------- |
+| **入门版 Starter**    | $499 / 年 | 基础 AI 分析、单数据源、社区支持 |
+| **专业版 Pro**        | $999 / 年 | 高级功能、多数据源、优先支持     |
+| **企业版 Enterprise** | 定制      | 全功能、定制集成、专属支持       |
+
+> 入门版提供 **7 天免费试用**，无需信用卡。
+
+------
+
+### ⚡ 快速开始
+
+#### 环境要求
+
+- Docker 20+
+- Docker Compose 1.29+
+- 可访问的数据源（MySQL、PostgreSQL、Snowflake 等）
+
+#### 安装步骤
+
+```
+git clone https://github.com/coomia-ai/datagpt.git
+cd datagpt
+docker-compose up -d
+```
+
+在浏览器中打开：
+
+```
+http://localhost:8000
+```
+
+> 系统将向您的邮箱发送 7 天试用密钥。
+
+------
+
+### 📄 文档与支持
+
+- 用户指南：https://coomia.com/docs.html
+- 技术支持：https://coomia.com/support.html
+
+------
+
+### 📞 联系我们
+
+- 邮箱：support@coomia.com
+- 官网：https://coomia.com
+
+------
+
+### 🔒 关于 DataGPT
+
+DataGPT 专注于 **隐私保护、高性能与易用性**。
+ 无论您是初创团队、中小企业还是大型机构，DataGPT 都能为您提供
+ **安全、快速、可自托管的 AI 数据分析体验**。
+
+> “让 AI 赋能数据，让数据驱动未来。” —— Coomia
