@@ -67,7 +67,7 @@ docker-compose up -d
 Then open your browser:
 
 ```
-http://localhost:8000
+http://localhost:3000
 ```
 
 > You’ll receive a 7-day trial key by email.
@@ -157,7 +157,7 @@ docker-compose up -d
 在浏览器中打开：
 
 ```
-http://localhost:8000
+http://localhost:3000
 ```
 
 > 系统将向您的邮箱发送 7 天试用密钥。
