@@ -13,7 +13,7 @@
 
 **DataGPT** by **Coomia** is a **self-hosted AI data analytics platform** that automatically generates charts, KPIs, and dashboards from your datasets — without writing SQL or doing manual analysis.
 
-You can deploy it in minutes, keep full control of your data, and let AI turn it into real-time insights.
+Deploy in minutes, maintain full control of your data, and let AI turn it into real-time insights.
 
 ---
 
@@ -40,9 +40,9 @@ You can deploy it in minutes, keep full control of your data, and let AI turn it
 
 | Edition        | Price       | Includes                                                 |
 | -------------- | ----------- | -------------------------------------------------------- |
-| **Starter**    | $499 / year | Core AI analytics, single data source, community support |
-| **Pro**        | $999 / year | Advanced analytics, multi-data-source, priority support  |
-| **Enterprise** | Custom      | All features, integrations, dedicated support            |
+| **Starter**    | $199 / year | Core AI analytics, single data source, community support |
+| **Pro**        | $599 / year | Advanced analytics, multi-data-source, priority support  |
+| **Enterprise** | $3999 / year| All features, integrations, dedicated support            |
 
 > 7-day free trial available — no credit card required.
 
@@ -130,9 +130,9 @@ Coomia builds secure, high-performance, and user-friendly AI data tools.
 
 | 授权版本              | 价格      | 功能                             |
 | --------------------- | --------- | -------------------------------- |
-| **入门版 Starter**    | $499 / 年 | 基础 AI 分析、单数据源、社区支持 |
-| **专业版 Pro**        | $999 / 年 | 高级功能、多数据源、优先支持     |
-| **企业版 Enterprise** | 定制      | 全功能、定制集成、专属支持       |
+| **入门版 Starter**    | $199 / 年 | 基础 AI 分析、单数据源、社区支持 |
+| **专业版 Pro**        | $599 / 年 | 高级功能、多数据源、优先支持     |
+| **企业版 Enterprise** | $3999 / 年      | 全功能、定制集成、专属支持       |
 
 > 入门版提供 **7 天免费试用**，无需信用卡。
 
