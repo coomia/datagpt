@@ -1,0 +1,148 @@
+####################################
+# OS / Editor / IDE
+####################################
+.DS_Store
+Thumbs.db
+
+.idea/
+.vscode/
+*.swp
+*.swo
+*.tmp
+
+####################################
+# Common logs & runtime
+####################################
+*.log
+logs/
+tmp/
+temp/
+
+####################################
+# Environment & secrets
+####################################
+.env
+.env.*
+!.env.example
+*.key
+*.crt
+secrets/
+config/local/
+config/private/
+
+####################################
+# Python (api)
+####################################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# virtualenv
+venv/
+.venv/
+env/
+ENV/
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy / ruff / pyright
+.mypy_cache/
+.ruff_cache/
+.pyright/
+
+####################################
+# Python build / dist
+####################################
+build/
+dist/
+*.egg-info/
+
+####################################
+# Node / Frontend (frontend, ui)
+####################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# build outputs
+dist/
+build/
+.out/
+.next/
+.nuxt/
+.svelte-kit/
+.vercel/
+
+####################################
+# Frontend cache
+####################################
+.cache/
+.parcel-cache/
+.eslintcache
+
+####################################
+# Frontend env files
+####################################
+frontend/.env
+frontend/.env.*
+ui/.env
+ui/.env.*
+
+####################################
+# Trino
+####################################
+trino/data/
+trino/catalog/*.local.properties
+trino/logs/
+trino/var/
+
+####################################
+# Postgres
+####################################
+postgres/data/
+postgres/pgdata/
+postgres/logs/
+postgres/tmp/
+
+####################################
+# Docker / Compose runtime
+####################################
+**/docker-data/
+**/docker-volumes/
+**/volumes/
+**/.docker/
+**/.dockerignore.local
+
+####################################
+# Ollama / LLM runtime
+####################################
+ollama-service/models/
+ollama-service/data/
+ollama-service/logs/
+ollama-service/cache/
+
+####################################
+# Local uploads / user data
+####################################
+uploads/
+storage/
+data/
+media/
+
+####################################
+# Jupyter / notebooks (if any)
+####################################
+.ipynb_checkpoints/
+
+####################################
+# Backup files
+####################################
+*.bak
+*.old
+*.orig
