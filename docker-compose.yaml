@@ -75,7 +75,7 @@ services:
       - datagpt-network
 
 
-    clickhouse:
+  clickhouse:
       image: clickhouse/clickhouse-server:23.11
       container_name: clickhouse
       hostname: clickhouse
