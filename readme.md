@@ -41,10 +41,9 @@ Deploy in minutes, maintain full control of your data, and let AI turn it into r
 | Edition        | Price       | Includes                                                 |
 | -------------- | ----------- | -------------------------------------------------------- |
 | **Starter**    | $199 / year | Core AI analytics, single data source, community support |
-| **Pro**        | $599 / year | Advanced analytics, multi-data-source, priority support  |
-| **Enterprise** | $3999 / year| All features, integrations, dedicated support            |
+| **Pro**        | $399 / year | Advanced analytics, multi-data-source, priority support  |
 
-> 7-day free trial available — no credit card required.
+> 14-day free trial available.
 
 ---
 
@@ -131,10 +130,9 @@ Coomia builds secure, high-performance, and user-friendly AI data tools.
 | 授权版本              | 价格      | 功能                             |
 | --------------------- | --------- | -------------------------------- |
 | **入门版 Starter**    | $199 / 年 | 基础 AI 分析、单数据源、社区支持 |
-| **专业版 Pro**        | $599 / 年 | 高级功能、多数据源、优先支持     |
-| **企业版 Enterprise** | $3999 / 年      | 全功能、定制集成、专属支持       |
+| **专业版 Pro**        | $399 / 年 | 高级功能、多数据源、优先支持     |
 
-> 入门版提供 **7 天免费试用**，无需信用卡。
+> 入门版提供 **14 天免费试用**。
 
 ------
 

@@ -46,7 +46,7 @@ services:
       retries: 5
 
   api:
-    image: coomia/datagpt-api:latest
+    image: coomia/datagpt-api:2.0
     container_name: api
     restart: unless-stopped
     ports:
@@ -65,12 +65,58 @@ services:
 
 
   ui:
-    image: coomia/datagpt-ui:latest
+    image: coomia/datagpt-ui:2.0
     environment:
         AGENT_URL: "http://api:${API_PORT}"
     container_name: ui
     ports:
       - "3000:3000"
+    networks:
+      - datagpt-network
+
+
+    clickhouse:
+      image: clickhouse/clickhouse-server:23.11
+      container_name: clickhouse
+      hostname: clickhouse
+      ports:
+        - "8123:8123"
+        - "9000:9000"
+      environment:
+        CLICKHOUSE_DB: olist
+        CLICKHOUSE_USER: olist
+        CLICKHOUSE_PASSWORD: olist123456
+        CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: 1
+      ulimits:
+        nofile:
+          soft: 262144
+          hard: 262144
+      volumes:
+        - clickhouse_data:/var/lib/clickhouse
+        - clickhouse_logs:/var/log/clickhouse-server
+        - ./clickhouse/data:/var/lib/clickhouse/user_files
+        - ./clickhouse/init/init-db.sh:/docker-entrypoint-initdb.d/init-db.sh:ro
+        - ./clickhouse/init/01-create-tables.sql:/docker-entrypoint-initdb.d/01-create-tables.sql:ro
+        - ./clickhouse/init/02-import-data.sql:/docker-entrypoint-initdb.d/02-import-data.sql:ro
+      networks:
+        - datagpt-network
+
+  trino:
+    image: trinodb/trino:latest
+    container_name: trino
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./trino/config:/etc/trino
+      - ./trino/catalog:/etc/trino/catalog
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/-/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    environment:
+      - JAVA_OPTS=-Xmx2g
     networks:
       - datagpt-network
 
@@ -80,3 +126,5 @@ networks:
 volumes:
   ollama-data:
   postgres-data:
+  clickhouse_data:
+  clickhouse_logs:
