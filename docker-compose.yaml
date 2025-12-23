@@ -66,6 +66,8 @@ services:
 
   ui:
     image: coomia/datagpt-ui:2.0
+    environment:
+      AGENT_URL: "${AGENT_URL}"
     container_name: ui
     depends_on:
       - api
