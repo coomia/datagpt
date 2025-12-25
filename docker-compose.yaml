@@ -67,12 +67,28 @@ services:
   ui:
     image: coomia/datagpt-ui:2.0
     environment:
-      AGENT_URL: "${AGENT_URL}"
+      AGENT_URL: "/api"
     container_name: ui
     depends_on:
       - api
     ports:
       - "3000:3000"
+    networks:
+      - datagpt-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"                          # HTTP
+      - "443:443"                        # HTTPS（后面可加证书）
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro   # 挂载配置文件
+      # - ./certs:/etc/nginx/certs:ro           # 以后加 HTTPS 时用
+    depends_on:
+      - ui
+      - api
     networks:
       - datagpt-network
 
